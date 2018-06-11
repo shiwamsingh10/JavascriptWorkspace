@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript is case sensitive</h2>
+
+        <p>lastName identifier is different from lastname</p>
+        <p id = "demo"></p>
+        <p id = "demo2"></p>
+        <script>
+        var lastname, lastName;
+
+        //hyphens are not allowed in JS and only reserved for subtraction.
+        /*
+        SO var last-name is invalid identifier
+        */
+        lastname = "Smith";
+        lastName = "Peterson";
+        document.getElementById("demo").innerHTML = lastname;
+        document.getElementById("demo2").innerHTML = lastName;
+        </script>
+    </body>
+</html>
